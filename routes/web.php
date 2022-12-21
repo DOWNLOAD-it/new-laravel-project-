@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome2', ['titre' => 'Mon premier exemple.']);
+});
+
+Route::get('/ping',function (){
+    return response('<center><h1>pong</h1></center>');
 });
